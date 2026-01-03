@@ -3,7 +3,10 @@
 
 Python implementation for the paper:
 
-Siddhant Gautam, Angqi Li, Nicole Seiberlich, Jeffrey A. Fessler, Saiprasad Ravishankar. "Scan-Adaptive MRI Undersampling Using Neighbor-based Optimization (SUNO)." arXiv preprint [arXiv:2501.09799](https://arxiv.org/abs/2501.09799) (2025).
+Siddhant Gautam, Angqi Li, Nicole Seiberlich, Jeffrey A. Fessler, Saiprasad Ravishankar.
+"Scan-Adaptive MRI Undersampling Using Neighbor-based Optimization (SUNO)."
+arXiv preprint [arXiv:2501.09799](https://arxiv.org/abs/2501.09799) (2025).
+To appear in IEEE Tr. on Computational Imaging in 2026.
 
 ### Alternating training framework:
 In this paper, we propose a novel approach for jointly learning a set of scan-adaptive Cartesian undersampling patterns along with a reconstructor trained on such undersampling patterns. 
@@ -28,7 +31,7 @@ where:
 - $N$ is the total number of training images.
 - $\mathcal{C}$ is the set of all 1D Cartesian undersampling patterns with a specified sampling budget.
 - $\mathbf{A}_i^H$ is the adjoint of the fully-sampled multi-coil MRI measurement operator for the $i$-th training scan.
-- $f_{\theta}$ is the reconstruction network parameterized by $\theta$, trained on the set of sampling patterns $\{\mathbf{M}_i\}_{i=1}^N$.
+- $f_{\theta}$ is the reconstruction network parameterized by $\theta$, trained on the set of sampling patterns ${❴𝑴_i❵}_{i=1}^N$.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/sidgautam95/adaptive-sampling-mri-suno/main/figures/icd_alternating.png" alt="alt text" />
